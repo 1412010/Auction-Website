@@ -6,8 +6,13 @@
 	<link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
 	<link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="assets/css/bootstrap-social.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet" >
+
 </head>
 <body>
+<!-- <div id="fb-root"></div> -->
 	<!-- Header -->
 	<div class="container-fluid" style="width: 85%; max-width: none!important; margin-right: auto; margin-left: auto;">
 			<div class="row" style="display:flex;background-color:#1EB771;padding-top: 4%;padding-bottom: 3%;"> <!-- Khung tiêu đề -->
@@ -55,10 +60,67 @@
 				</div> <!-- /Khung search -->
 				
 				<div class="col-md-2" style="display:flex;align-items:center;">
-					<button class="btn btn-default col-md-2" style="border:none;background-color:transparent;">
+					<button class="btn btn-default col-md-2" data-toggle="modal" data-target="#signinModal"style="border:none;background-color:transparent;">
 						<span class="glyphicon glyphicon-user" style="font-size:150%;color:#fff;"></span>
 						<span style="color:#fff;">Đăng nhập</span>
 					</button>
+					<!-- Modal -->
+					<div id="signinModal" class="modal fade" role="dialog">
+					  <div class="modal-dialog modal-sm">
+
+					    <!-- Modal content-->
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal">&times;</button>
+					        <h4 class="modal-title">Đăng nhập</h4>
+					      </div>
+					      <div class="modal-body">
+					        <form >
+					        	 <div class="form-group"> <!-- Email -->
+								    <label for="email">Email</label>
+								    <input type="email" class="form-control" id="email">
+								  </div><!-- Email -->
+
+								  <div class="form-group"> <!-- Mật khẩu -->
+								    <label for="mk">Mật khẩu</label>
+								    <input type="matKhau" class="form-control" id="mk">
+								  </div><!-- Mật khẩu -->
+
+								  <div class="col-md-offset-1 col-md-11" style="padding-right: 0;"> <!-- link -->
+								  	<div class="col-md-7" style="padding-right: 0; text-align: right;">					
+								  			<a href="#">Quên mật khẩu</a>							  			  		
+								  	</div>
+								  	<div class="col-md-5" style="padding-right: 0; text-align: right;">								  		
+								  		<a href="signup.html">Đăng ký</a>
+								  	</div>							  	
+								  </div><!-- link -->
+								   <!-- Checkbox duy trì đăng nhập -->
+								  <div class="col-md-offset-4 col-md-8" style="padding-right: 0; text-align: right;">
+								    <div class="checkbox">
+								        <label><input type="checkbox">Duy trì đăng nhập</label>
+								    </div>
+								  </div>
+
+								  <div>
+								  	<button type="submit" class="btn btn-success" style="width: 100%;">Đăng nhập</button>
+								  </div>
+								  <hr/>
+								  <a class="btn btn-block btn-social btn-facebook">
+									<span class="fa fa-facebook"></span> Đăng nhập với facebook
+								  </a>
+								  <a class="btn btn-block btn-social btn-google">
+						    		<span class="fa fa-google"></span> Đăng nhập với google
+								  </a>
+					        </form>
+					      </div>
+					      <!-- <div class="modal-footer">
+					        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					      </div> -->
+					    </div>
+
+					  </div>
+					</div><!-- Modal -->
+
 				</div>
 			</div> <!-- /Khung tiêu đề -->
 			
@@ -101,16 +163,17 @@
 						Tạo tài khoản mới
 					</div>
 					<div class="panel-body"> <!-- panel body -->
+					<div class="col-sm-8">
 						<form class="form-horizontal"> <!-- form -->
 							<div class="form-group"> <!-- Tên tài khoản -->
-								<label class="control-label col-sm-3" for="ten">Tên tài khoản*:</label>
-							    <div class="col-sm-9">
-							      <input type="ten" class="form-control" id="ten" placeholder="Tên tài khoản">
+								<label class="control-label col-sm-4" for="ten">Họ và tên*:</label>
+							    <div class="col-sm-8">
+							      <input type="ten" class="form-control" id="ten" placeholder="Họ và tên">
 							    </div>
 							</div>
 
 							<div class="form-group"> <!-- Giới tính radio -->
-								<label class="control-label col-sm-3" for="chonGioiTinh">Giới tính*:</label>
+								<label class="control-label col-sm-4" for="chonGioiTinh">Giới tính*:</label>
 							    <div class="col-sm-8">
 							        <label class="radio-inline"><input type="radio" name="gioiTinh">Nam</label>
 									<label class="radio-inline"><input type="radio" name="gioiTinh">Nữ</label>
@@ -118,8 +181,8 @@
 							</div>
 							
 							<div class="form-group"> <!-- Ngày sinh -->
-								<label for="dtp_input2" class="col-sm-3 control-label">Ngày sinh</label>
-								<div class="col-sm-5">
+								<label for="dtp_input2" class="col-sm-4 control-label">Ngày sinh</label>
+								<div class="col-sm-8">
 					                <div class="input-group date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
 					                    <input class="form-control" type="text" value="" readonly>
 					                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
@@ -130,39 +193,56 @@
 							</div>
 
 							<div class="form-group"> <!-- Email -->
-								<label class="control-label col-sm-3" for="email">Email*:</label>
-							    <div class="col-sm-9">
+								<label class="control-label col-sm-4" for="email">Email*:</label>
+							    <div class="col-sm-8">
 							      <input type="email" class="form-control" id="email" placeholder="Nhập email">
 							    </div>
 							</div>
 
 							<div class="form-group"> <!-- Mật khẩu -->
-								<label class="control-label col-sm-3" for="matKhau">Mật khẩu*:</label>
-							    <div class="col-sm-9">
+								<label class="control-label col-sm-4" for="matKhau">Mật khẩu*:</label>
+							    <div class="col-sm-8">
 							      <input type="matKhau" class="form-control" id="matKhau" placeholder="Nhập mật khẩu">
 							    </div>
 							</div>
 
 							<div class="form-group"> <!-- Nhập lại mật khẩu -->
-								<label class="control-label col-sm-3" for="nhapLaiMatKhau">Nhập lại mật khẩu*:</label>
-							    <div class="col-sm-9">
+								<label class="control-label col-sm-4" for="nhapLaiMatKhau">Nhập lại mật khẩu*:</label>
+							    <div class="col-sm-8">
 							      <input type="nhapLaiMatKhau" class="form-control" id="nhapLaiMatKhau" placeholder="Nhập lại mật khẩu">
 							    </div>
 							</div>
 
 							<div class="form-group"> <!-- Checkbox đồng ý điều khoản -->
-							    <div class="col-sm-offset-3 col-sm-9">
+							    <div class="col-sm-offset-4 col-sm-8">
 							      <div class="checkbox">
 							        <label><input type="checkbox"> Tôi đồng ý với các điều khoản của trang web</label>
 							      </div>
 							    </div>
 							</div>
-
+							
 						</form><!-- form -->
+					</div>
+					<div class="col-sm-4" > <!-- Facebook, google -->
+					<div class="inner" style="border-left: 1px dotted; height: 350px;">
+						<div style=" padding-left: 30px; padding-top: 140px">
+						<a class="btn btn-block btn-social btn-facebook">
+						    <span class="fa fa-facebook"></span> Đăng ký với facebook
+						</a>
+						</div>
+
+						<div style=" padding-left: 30px; padding-top: 10px">
+						<a class="btn btn-block btn-social btn-google">
+						    <span class="fa fa-google"></span> Đăng ký với google
+						</a>
+						</div>
+					</div>
+					</div> <!-- Facebook, google -->
 					</div><!-- panel body -->
 					<div class="panel-footer">
 						<div class="col-sm-offset-3">
-							<button type="submit" class="btn btn-success">Đăng ký</button>
+							<button type="submit" class="btn btn-success">Xác nhận</button>
+							<button type="button" class="btn btn-default">Hủy</button>
 						</div>
 					</div>
 				</div>
