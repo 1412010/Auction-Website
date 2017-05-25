@@ -1,245 +1,303 @@
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<title>Kết quả tìm kiếm - 'Iphone'</title>  <!-- ------ --> 
-	<link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta charset="utf-8">
+    <title>Kết quả tìm kiếm - 'Iphone'</title>
+    <!-- ------ -->
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
+
 <body>
-	<div style="margin:1% 2%;">
-		<div class="row" style="display:flex;background-color:#1EB771;padding-top: 4%;padding-bottom: 3%;"> <!-- Khung tiêu đề -->
-			<div class="col-md-2" style="display:flex;align-items:center;">
-				<div class="col-md-4"></div>
-				<div class="col-md-8">
-					<a class="logo" href="index.html">
-						<img src="images/logo.png" alt="logo">
-					</a>
-				</div>
-			</div>
-			
-			<div class="col-md-8" style="display:flex;align-items:center;"> <!-- Khung search -->
-				<!--<form class="form-inline" style="display:table-cell;text-align:center;vertical-align:middle;">-->
-					<div class="input-group col-md-11">
-						<!-- Textbox search -->
-						<input type="text" placeholder="Tìm kiếm" class="form-control" value="Iphone" /> <!-- ------ --> 
-						 <!-- Dropdown -->
-						<div class="input-group-btn">
-							<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="background-color:#EDEEF2">
-								<span id="search_concept">Tất cả</span> <span class="caret"></span>
-							</button>
-							<ul class="dropdown-menu">
-								<li><a>Dụng cụ thể thao</a></li>
-								<li><a>Điện gia dụng - điện lạnh</a></li>
-								<li><a>Điện thoại - máy tính bảng</a></li>
-								<li><a>Đồng hồ - phụ kiện</a></li>
-								<li><a>Laptop - thiết bị IT</a></li>
-								<li><a>Máy ảnh - quay phim</a></li>
-								<li><a>Phụ kiện - thiết bị số</a></li>
-								<li><a>Sách - báo - tạp chí</a></li>
-								<li><a>Thời trang</a></li>
-								<li><a>Tivi - thiết bị nghe nhìn</a></li>
-								<li><a>Truyện tranh - đồ chơi</a></li>
-							</ul>
-						</div>
-					</div>
-					<!-- Nút search -->
-					<div>
-						<button type="submit" class="btn btn-default" title="Tìm kiếm" style="border:none;color:#fff;background-color:transparent;">
-							<span class="glyphicon glyphicon-search" style="vertical-align:middle;"></span>
-						</button>
-					</div>
-				<!--</form>-->
-			</div> <!-- /Khung search -->
-			
-			<div class="col-md-2" style="display:flex;align-items:center;">
-				<button class="btn btn-default col-md-2" style="border:none;background-color:transparent;">
-					<span class="glyphicon glyphicon-user" style="font-size:150%;color:#fff;"></span>
-					<span style="color:#fff;">Đăng nhập</span>
-				</button>
-			</div>
-		</div> <!-- /Khung tiêu đề -->
-		
-		
-		<div id="nav" class="row navbar" style="background-color:#2BB34A;padding-top:1%;padding-bottom:1%;"> <!-- Navigation bar -->
-			<ul style="list-style:none;text-align:center;">
-				<li style="width:10%;"><a>Trang chủ</a></li>
-				<li style="width:10%;"><a>Hot deal</a></li>
-				<li style="width:20%;"><a>Sản phẩm đang theo dõi</a></li>
-				<li style="width:10%;"><a>Đăng bán</a></li>
-			</ul>
-		</div> <!-- /Navigation bar -->
-		
-		
-		<div>
-			<!-- Chứa 2 panel -->
-			<div class="col-md-3">
-				<!-- Panel 1: Theo danh mục -->
-				<div class="panel panel-default" style="border-color: #1ED271;">
-					<div class="panel-heading" style="background-color: #1ED271;">
-						<span class="panel-title">Lọc theo danh mục</span>
-					</div>
-					<div class="list-group">
-						<a class="list-group-item">Dụng cụ thể thao (0)</a>
-						<a class="list-group-item">Điện gia dụng - điện lạnh (0)</a>
-						<a class="list-group-item">Điện thoại - máy tính bảng (3)</a>
-						<a class="list-group-item">Đồng hồ - phụ kiện (0)</a>
-						<a class="list-group-item">Laptop - thiết bị IT (0)</a>
-						<a class="list-group-item">Máy ảnh - quay phim (0)</a>
-						<a class="list-group-item">Phụ kiện - thiết bị số (1)</a>
-						<a class="list-group-item">Sách - báo - tạp chí (0)</a>
-						<a class="list-group-item">Thời trang (0)</a>
-						<a class="list-group-item">Tivi - thiết bị nghe nhìn (0)</a>
-						<a class="list-group-item">Truyện tranh - đồ chơi (0)</a>
-					</div>
-				</div>
-				<!-- Panel 2: Theo giá -->
-				<div class="panel panel-default" style="border-color: #1ED271;">
-					<div class="panel-heading" style="background-color: #1ED271;">
-						<span>Lọc theo giá</span>
-					</div>
-					<div class="list-group">
-						<a class="list-group-item">Nhỏ hơn 1.000.000 vnd (1)</a>
-						<a class="list-group-item">1.000.000 vnd - 10.000.000 vnd (1)</a>
-						<a class="list-group-item">10.000.000 vnd - 30.000.000 vnd (2)</a>
-						<a class="list-group-item">30.000.000 vnd - 50.000.000 vnd (0)</a>
-						<a class="list-group-item"> Hơn 50.000.000 vnd (0)</a>
-					</div>
-				</div>
-			</div>
-
-			<!-- Kết quả tìm kiếm -->
-			<div class="col-md-8 container" style="padding-left: 10%;">
-				<!-- Tiêu đề -->
-				<div class="row" style="margin-bottom: 3%;">
-					<!-- -------- -->
-					<span style="font-size:250%;">Kết quả tìm kiếm cho 'Iphone': <span style="color: #f00;">4</span> kết quả</span>
-					<!-- -------- -->
-				</div>
-				<!-- Kết quả -->
-				<div class="row">
-					<div class="row item-row" style="margin-top: 2%;">
-						<div class="col-md-2" style="width: 150px;height: 100px;"> <!-- Hình ảnh sản phẩm -->
-							<a><img src="..."><a>
-						</div>
-						<div class="col-md-10 container">
-							<div class="row" style="font-size: 150%;font-weight: bold;padding-bottom: 0.5%;"> <!-- Tên sản phẩm -->
-									<a>Iphone 7 plus like new 98%</a>
-							</div>
-							<div class="row item-info">
-								<div class="col-md-6 container"> <!-- Các dòng chứa thông tin sản phẩm -->
-									<div class="row"> <!-- Người bán-->
-										<span>Người đăng bán: </span> <a>Lê Hiếu</a>
-									</div>
-									<div class="row"> <!-- Danh mục của sản phẩm -->
-										<span>Danh mục: </span> Điện thoại - máy tính bản
-									</div>
-								</div>
-								<div class="col-md-6 container"> <!-- Giá sản phẩm -->
-									<div class="row"> <!-- Giá hiện tại -->
-										<span>Giá hiện tại: </span> <span class="numberical-info-small">20.000.000</span> vnd
-									</div>
-									<div class="row"> <!-- Gá mua ngay -->
-										<span>Giá mua ngay: </span> <span class="numberical-info-small">30.000.000</span> vnd
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-					<div class="row item-row" style="margin-top: 2%;">
-						<div class="col-md-2" style="width: 150px;height: 100px;"> <!-- Hình ảnh sản phẩm -->
-							<a><img src="..."><a>
-						</div>
-						<div class="col-md-10 container">
-							<div class="row" style="font-size: 150%;font-weight: bold;padding-bottom: 0.5%;"> <!-- Tên sản phẩm -->
-									<a>Iphone 6</a>
-							</div>
-							<div class="row item-info">
-								<div class="col-md-6 container"> <!-- Các dòng chứa thông tin sản phẩm -->
-									<div class="row"> <!-- Người bán-->
-										<span>Người đăng bán: </span> <a>Trai Đặng</a>
-									</div>
-									<div class="row"> <!-- Danh mục của sản phẩm -->
-										<span>Danh mục: </span> Điện thoại - máy tính bản
-									</div>
-								</div>
-								<div class="col-md-6 container"> <!-- Giá sản phẩm -->
-									<div class="row"> <!-- Giá hiện tại -->
-										<span>Giá hiện tại: </span> <span class="numberical-info-small">7.000.000</span> vnd
-									</div>
-									<div class="row"> <!-- Gá mua ngay -->
-										<span>Giá mua ngay: </span> <span class="numberical-info-small">---</span> vnd
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-					<div class="row item-row" style="margin-top: 2%;">
-						<div class="col-md-2" style="width: 150px;height: 100px;"> <!-- Hình ảnh sản phẩm -->
-							<a><img src="..."><a>
-						</div>
-						<div class="col-md-10 container">
-							<div class="row" style="font-size: 150%;font-weight: bold;padding-bottom: 0.5%;"> <!-- Tên sản phẩm -->
-									<a>Ốp lưng Iphone 7</a>
-							</div>
-							<div class="row item-info">
-								<div class="col-md-6 container"> <!-- Các dòng chứa thông tin sản phẩm -->
-									<div class="row"> <!-- Người bán-->
-										<span>Người đăng bán: </span> <a>Đức Nguyễn</a>
-									</div>
-									<div class="row"> <!-- Danh mục của sản phẩm -->
-										<span>Danh mục: </span> Phụ kiện - thiết bị số
-									</div>
-								</div>
-								<div class="col-md-6 container"> <!-- Giá sản phẩm -->
-									<div class="row"> <!-- Giá hiện tại -->
-										<span>Giá hiện tại: </span> <span class="numberical-info-small">---</span> vnd
-									</div>
-									<div class="row"> <!-- Gá mua ngay -->
-										<span>Giá mua ngay: </span> <span class="numberical-info-small">100.000</span> vnd
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-					<div class="row item-row" style="margin-top: 2%;">
-						<div class="col-md-2" style="width: 150px;height: 100px;"> <!-- Hình ảnh sản phẩm -->
-							<a><img src="..."><a>
-						</div>
-						<div class="col-md-10 container">
-							<div class="row" style="font-size: 150%;font-weight: bold;padding-bottom: 0.5%;"> <!-- Tên sản phẩm -->
-									<a>Iphone 7 plus red</a>
-							</div>
-							<div class="row item-info">
-								<div class="col-md-6 container"> <!-- Các dòng chứa thông tin sản phẩm -->
-									<div class="row"> <!-- Người bán-->
-										<span>Người đăng bán: </span> <a>Đức Nguyễn</a>
-									</div>
-									<div class="row"> <!-- Danh mục của sản phẩm -->
-										<span>Danh mục: </span> Điện thoại - máy tính bản
-									</div>
-								</div>
-								<div class="col-md-6 container"> <!-- Giá sản phẩm -->
-									<div class="row"> <!-- Giá hiện tại -->
-										<span>Giá hiện tại: </span> <span class="numberical-info-small">29.000.000</span> vnd
-									</div>
-									<div class="row"> <!-- Gá mua ngay -->
-										<span>Giá mua ngay: </span> <span class="numberical-info-small">35.000.000</span> vnd
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div><!-- /Kết quả -->
-			</div>
-		</div>
-	</div>
-	<script type="text/javascript" src="assets/jquery-3.1.1.min.js"></script>
-	<script type="text/javascript" src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <div style="margin:1% 2%;">
+        <div class="row" style="display:flex;background-color:#1EB771;padding-top: 4%;padding-bottom: 3%;">
+            <!-- Khung tiêu đề -->
+            <div class="col-md-2" style="display:flex;align-items:center;">
+                <div class="col-md-4"></div>
+                <div class="col-md-8">
+                    <a class="logo" href="index.html">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-8" style="display:flex;align-items:center;">
+                <!-- Khung search -->
+                <!--<form class="form-inline" style="display:table-cell;text-align:center;vertical-align:middle;">-->
+                <div class="input-group col-md-11">
+                    <!-- Textbox search -->
+                    <input type="text" placeholder="Tìm kiếm" class="form-control" value="Iphone" />
+                    <!-- ------ -->
+                    <!-- Dropdown -->
+                    <div class="input-group-btn">
+                        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="background-color:#EDEEF2">
+                            <span id="search_concept">Tất cả</span> <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a>Dụng cụ thể thao</a></li>
+                            <li><a>Điện gia dụng - điện lạnh</a></li>
+                            <li><a>Điện thoại - máy tính bảng</a></li>
+                            <li><a>Đồng hồ - phụ kiện</a></li>
+                            <li><a>Laptop - thiết bị IT</a></li>
+                            <li><a>Máy ảnh - quay phim</a></li>
+                            <li><a>Phụ kiện - thiết bị số</a></li>
+                            <li><a>Sách - báo - tạp chí</a></li>
+                            <li><a>Thời trang</a></li>
+                            <li><a>Tivi - thiết bị nghe nhìn</a></li>
+                            <li><a>Truyện tranh - đồ chơi</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Nút search -->
+                <div>
+                    <button type="submit" class="btn btn-default" title="Tìm kiếm" style="border:none;color:#fff;background-color:transparent;">
+                        <span class="glyphicon glyphicon-search" style="vertical-align:middle;"></span>
+                    </button>
+                </div>
+                <!--</form>-->
+            </div>
+            <!-- /Khung search -->
+            <div class="col-md-2" style="display:flex;align-items:center;">
+                <button class="btn btn-default col-md-2" style="border:none;background-color:transparent;">
+                    <span class="glyphicon glyphicon-user" style="font-size:150%;color:#fff;"></span>
+                    <span style="color:#fff;">Đăng nhập</span>
+                </button>
+            </div>
+        </div>
+        <!-- /Khung tiêu đề -->
+        <div id="nav" class="row navbar" style="background-color:#2BB34A;padding-top:1%;padding-bottom:1%;">
+            <!-- Navigation bar -->
+            <ul style="list-style:none;text-align:center;">
+                <li style="width:10%;"><a>Trang chủ</a></li>
+                <li style="width:10%;"><a>Hot deal</a></li>
+                <li style="width:20%;"><a>Sản phẩm đang theo dõi</a></li>
+                <li style="width:10%;"><a>Đăng bán</a></li>
+            </ul>
+        </div>
+        <!-- /Navigation bar -->
+        <div>
+            <!-- Chứa 2 panel -->
+            <div class="col-md-3">
+                <!-- Panel 1: Theo danh mục -->
+                <div class="panel panel-default" style="border-color: #1ED271;">
+                    <div class="panel-heading" style="background-color: #1ED271;">
+                        <span class="panel-title">Lọc theo danh mục</span>
+                    </div>
+                    <div class="list-group">
+                        <a class="list-group-item">Dụng cụ thể thao (0)</a>
+                        <a class="list-group-item">Điện gia dụng - điện lạnh (0)</a>
+                        <a class="list-group-item">Điện thoại - máy tính bảng (3)</a>
+                        <a class="list-group-item">Đồng hồ - phụ kiện (0)</a>
+                        <a class="list-group-item">Laptop - thiết bị IT (0)</a>
+                        <a class="list-group-item">Máy ảnh - quay phim (0)</a>
+                        <a class="list-group-item">Phụ kiện - thiết bị số (1)</a>
+                        <a class="list-group-item">Sách - báo - tạp chí (0)</a>
+                        <a class="list-group-item">Thời trang (0)</a>
+                        <a class="list-group-item">Tivi - thiết bị nghe nhìn (0)</a>
+                        <a class="list-group-item">Truyện tranh - đồ chơi (0)</a>
+                    </div>
+                </div>
+                <!-- Panel 2: Theo giá -->
+                <div class="panel panel-default" style="border-color: #1ED271;">
+                    <div class="panel-heading" style="background-color: #1ED271;">
+                        <span>Lọc theo giá</span>
+                    </div>
+                    <div class="list-group">
+                        <a class="list-group-item">Nhỏ hơn 1.000.000 vnd (1)</a>
+                        <a class="list-group-item">1.000.000 vnd - 10.000.000 vnd (1)</a>
+                        <a class="list-group-item">10.000.000 vnd - 30.000.000 vnd (2)</a>
+                        <a class="list-group-item">30.000.000 vnd - 50.000.000 vnd (0)</a>
+                        <a class="list-group-item"> Hơn 50.000.000 vnd (0)</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Kết quả tìm kiếm -->
+            <div class="col-md-9 container" style="padding-left: 1%;">
+                <!-- Tiêu đề -->
+                <div class="row" style="margin-bottom: 3%;">
+                    <!-- -------- -->
+                    <span style="font-size:250%;">Kết quả tìm kiếm cho 'Iphone': <span style="color: #f00;">4</span> kết quả</span>
+                    <!-- -------- -->
+                </div>
+                <!-- Kết quả -->
+                <hr>
+                <div class="row" style="border-bottom: 10px; border-top: 10px;">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#"><img class="media-object pull-left" src="images/iphone7.jpg" width="150px" height="100px" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <div class="row">
+                                <!-- Tên sản phẩm -->
+                                <div class="col-md-5">
+                                    <a style="font-size: 150%;font-weight: bold;">Iphone 7 plus like new 98%</a>
+                                    <br>
+                                    <br>
+                                    <span>Người đăng bán: </span> <a>Lê Hiếu</a>
+                                    <br>
+                                    <span>Danh mục: </span> Điện thoại - máy tính bản
+                                </div>
+                                <div class="col-md-4" style="padding-top: 1%">
+                                    <!-- Giá sản phẩm -->
+                                    <div class="row">
+                                        <!-- Giá hiện tại -->
+                                        <span>Giá hiện tại: &nbsp&nbsp&nbsp</span> <span class="numberical-info-small" style="font-weight: bold; color:#00f; font-size: 130%">20.000.000</span> vnd
+                                    </div>
+                                    <div class="row" style="padding-top: 1%">
+                                        <!-- Gá mua ngay -->
+                                        <span>Giá mua ngay: </span> <span class="numberical-info-small" style="font-weight: bold; font-size:130%; color:#f00">30.000.000</span> vnd
+                                    </div>
+                                </div>
+                                <div class="col-md-3" style="padding-top: 1%">
+                                    <div class="row">
+                                        <!-- Thời gian còn lại -->
+                                        <span>Thời gian còn lại: </span> <span class="numberical-info-small" style="font-weight: bold; font-size: 130%; color:#00f; font-size: 130%">30</span> ngày
+                                    </div>
+                                    <div class="row" style="padding-top: 1%">
+                                        <!-- Lượt đấu giá -->
+                                        <span>Số lượt đấu giá: &nbsp</span> <span class="numberical-info-small" style="font-weight: bold; font-size: 130%; color:#f00">43</span> lượt
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row" style="border-bottom: 10px; border-top: 10px;">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#"><img class="media-object pull-left" src="images/iphone7.jpg" width="150px" height="100px" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <div class="row">
+                                <!-- Tên sản phẩm -->
+                                <div class="col-md-5">
+                                    <a style="font-size: 150%;font-weight: bold;">Iphone 7 plus like new 98%</a>
+                                    <br>
+                                    <br>
+                                    <span>Người đăng bán: </span> <a>Lê Hiếu</a>
+                                    <br>
+                                    <span>Danh mục: </span> Điện thoại - máy tính bản
+                                </div>
+                                <div class="col-md-4" style="padding-top: 1%">
+                                    <!-- Giá sản phẩm -->
+                                    <div class="row">
+                                        <!-- Giá hiện tại -->
+                                        <span>Giá hiện tại: &nbsp&nbsp&nbsp</span> <span class="numberical-info-small" style="font-weight: bold; color:#00f; font-size: 130%">20.000.000</span> vnd
+                                    </div>
+                                    <div class="row" style="padding-top: 1%">
+                                        <!-- Gá mua ngay -->
+                                        <span>Giá mua ngay: </span> <span class="numberical-info-small" style="font-weight: bold; font-size:130%; color:#f00">30.000.000</span> vnd
+                                    </div>
+                                </div>
+                                <div class="col-md-3" style="padding-top: 1%">
+                                    <div class="row">
+                                        <!-- Thời gian còn lại -->
+                                        <span>Thời gian còn lại: </span> <span class="numberical-info-small" style="font-weight: bold; font-size: 130%; color:#00f; font-size: 130%">30</span> ngày
+                                    </div>
+                                    <div class="row" style="padding-top: 1%">
+                                        <!-- Lượt đấu giá -->
+                                        <span>Số lượt đấu giá: &nbsp</span> <span class="numberical-info-small" style="font-weight: bold; font-size: 130%; color:#f00">43</span> lượt
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row" style="border-bottom: 10px; border-top: 10px;">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#"><img class="media-object pull-left" src="images/iphone7.jpg" width="150px" height="100px" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <div class="row">
+                                <!-- Tên sản phẩm -->
+                                <div class="col-md-5">
+                                    <a style="font-size: 150%;font-weight: bold;">Iphone 7 plus like new 98%</a>
+                                    <br>
+                                    <br>
+                                    <span>Người đăng bán: </span> <a>Lê Hiếu</a>
+                                    <br>
+                                    <span>Danh mục: </span> Điện thoại - máy tính bản
+                                </div>
+                                <div class="col-md-4" style="padding-top: 1%">
+                                    <!-- Giá sản phẩm -->
+                                    <div class="row">
+                                        <!-- Giá hiện tại -->
+                                        <span>Giá hiện tại: &nbsp&nbsp&nbsp</span> <span class="numberical-info-small" style="font-weight: bold; color:#00f; font-size: 130%">20.000.000</span> vnd
+                                    </div>
+                                    <div class="row" style="padding-top: 1%">
+                                        <!-- Gá mua ngay -->
+                                        <span>Giá mua ngay: </span> <span class="numberical-info-small" style="font-weight: bold; font-size:130%; color:#f00">30.000.000</span> vnd
+                                    </div>
+                                </div>
+                                <div class="col-md-3" style="padding-top: 1%">
+                                    <div class="row">
+                                        <!-- Thời gian còn lại -->
+                                        <span>Thời gian còn lại: </span> <span class="numberical-info-small" style="font-weight: bold; font-size: 130%; color:#00f; font-size: 130%">30</span> ngày
+                                    </div>
+                                    <div class="row" style="padding-top: 1%">
+                                        <!-- Lượt đấu giá -->
+                                        <span>Số lượt đấu giá: &nbsp</span> <span class="numberical-info-small" style="font-weight: bold; font-size: 130%; color:#f00">43</span> lượt
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row" style="border-bottom: 10px; border-top: 10px;">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#"><img class="media-object pull-left" src="images/iphone7.jpg" width="150px" height="100px" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <div class="row">
+                                <!-- Tên sản phẩm -->
+                                <div class="col-md-5">
+                                    <a style="font-size: 150%;font-weight: bold;">Iphone 7 plus like new 98%</a>
+                                    <br>
+                                    <br>
+                                    <span>Người đăng bán: </span> <a>Lê Hiếu</a>
+                                    <br>
+                                    <span>Danh mục: </span> Điện thoại - máy tính bản
+                                </div>
+                                <div class="col-md-4" style="padding-top: 1%">
+                                    <!-- Giá sản phẩm -->
+                                    <div class="row">
+                                        <!-- Giá hiện tại -->
+                                        <span>Giá hiện tại: &nbsp&nbsp&nbsp</span> <span class="numberical-info-small" style="font-weight: bold; color:#00f; font-size: 130%">20.000</span> vnd
+                                    </div>
+                                    <div class="row" style="padding-top: 1%">
+                                        <!-- Gá mua ngay -->
+                                        <span>Giá mua ngay: </span> <span class="numberical-info-small" style="font-weight: bold; font-size:130%; color:#f00">30.000.000</span> vnd
+                                    </div>
+                                </div>
+                                <div class="col-md-3" style="padding-top: 1%">
+                                    <div class="row">
+                                        <!-- Thời gian còn lại -->
+                                        <span>Thời gian còn lại: </span> <span class="numberical-info-small" style="font-weight: bold; font-size: 130%; color:#00f; font-size: 130%">30</span> ngày
+                                    </div>
+                                    <div class="row" style="padding-top: 1%">
+                                        <!-- Lượt đấu giá -->
+                                        <span>Số lượt đấu giá: &nbsp</span> <span class="numberical-info-small" style="font-weight: bold; font-size: 130%; color:#f00">43</span> lượt
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!-- /Kết quả -->
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
