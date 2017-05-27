@@ -6,10 +6,10 @@
 	<link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
 	<link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
 </head>
-<body>
+<body style="background: #f4f4f4">
 	<!-- Header -->
 	<div class="container-fluid" style="width: 85%; max-width: none!important; margin-right: auto; margin-left: auto;">
-			<div class="row" style="display:flex;background-color:#1EB771;padding-top: 4%;padding-bottom: 3%;"> <!-- Khung tiêu đề -->
+			<div class="row" style="display:flex; background: #189eff;padding-top: 4%;padding-bottom: 3%;"> <!-- Khung tiêu đề -->
 				<div class="col-md-2" style="display:flex;align-items:center;">
 					<div class="col-md-4"></div>
 					<div class="col-md-8">
@@ -70,19 +70,19 @@
 					      </div>
 					      <div class="modal-body">
 					        <form >
-					        	 <div class="form-group"> <!-- Email -->
-								    <label for="email">Email</label>
-								    <input type="email" class="form-control" id="email">
+					        	 <div class="input-group"> <!-- Email -->
+								    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+								    <input type="email" class="form-control" id="email" placeholder="Email" required autofocus>
 								  </div><!-- Email -->
 
-								  <div class="form-group"> <!-- Mật khẩu -->
-								    <label for="mk">Mật khẩu</label>
-								    <input type="matKhau" class="form-control" id="mk">
+								  <div class="input-group"> <!-- Mật khẩu -->
+								    <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+								    <input type="password" class="form-control" id="mk" placeholder="Password" required>
 								  </div><!-- Mật khẩu -->
 
 								  <div class="col-md-offset-1 col-md-11" style="padding-right: 0;"> <!-- link -->
 								  	<div class="col-md-7" style="padding-right: 0; text-align: right;">					
-								  			<a href="#">Quên mật khẩu</a>							  			  		
+								  			<a href="#">Quên mật khẩu?</a>							  			  		
 								  	</div>
 								  	<div class="col-md-5" style="padding-right: 0; text-align: right;">								  		
 								  		<a href="signup.html">Đăng ký</a>
@@ -95,10 +95,16 @@
 								    </div>
 								  </div>
 
-								  <div>
-								  	<button type="submit" class="btn btn-success" style="width: 100%;">Đăng nhập</button>
+								  <div class="col-md-12" style="padding-left: 0; padding-right: 0;">
+								  	 <button type="button" class="btn btn-labeled btn-success" style="width: 49%">
+		                                <span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span>Đăng nhập</button>
+		                            <button type="button" class="btn btn-labeled btn-danger" data-dismiss="modal" style="width: 49%">
+		                                <span class="btn-label"><i class="glyphicon glyphicon-remove"></i></span>Hủy</button>
 								  </div>
-								  <hr/>
+								  <div class="col-md-12" style="padding: 0;">
+								  	<hr/>
+								  </div>
+								  
 								  <a class="btn btn-block btn-social btn-facebook">
 									<span class="fa fa-facebook"></span> Đăng nhập với facebook
 								  </a>
@@ -114,11 +120,12 @@
 
 					  </div>
 					</div><!-- Modal -->
+
 				</div>
 			</div> <!-- /Khung tiêu đề -->
 			
 			
-			<div class="row navbar" style="background-color:#2BB34A;padding-top:1%;padding-bottom:1%;"> <!-- Navigation bar -->
+			<div id="nav" class="row navbar" style="background: #1d71ab;padding-top:1%;padding-bottom:1%;"> <!-- Navigation bar -->
 				<ul style="list-style:none;text-align:center;">
 					<li style="width:10%;"><a>Trang chủ</a></li>
 					<li style="width:10%;"><a>Hot deal</a></li>
@@ -133,8 +140,8 @@
 			<div class="row">
 				<!-- Panel left -->
 				<div class="col-md-3">
-					<div class="panel panel-default" style="border-color: #1ED271;">
-		 				<div class="panel-heading" style="background-color: #1ED271;">Danh mục sản phẩm</div>
+					<div class="panel panel-default" style="border-color: #189eff;">
+		 				<div class="panel-heading" style=" background: #189eff;">Danh mục sản phẩm</div>
 		   					<div class="list-group">			          
 					            <a href="#" class="list-group-item">Điện thoại - máy tính</a>
 					            <a href="#" class="list-group-item">Laptop</a>
@@ -142,8 +149,8 @@
 					            <a href="#" class="list-group-item">Tivi - thiết bị nghe</a>
 		          			</div>
 					</div>
-					<div class="panel panel-default" style="border-color: #1ED271;">
-		 				<div class="panel-heading" style="background-color: #1ED271;">Từ khóa phổ biến</div>
+					<div class="panel panel-default" style="border-color: #189eff;">
+		 				<div class="panel-heading" style=" background: #189eff;">Từ khóa phổ biến</div>
 		   					<div class="list-group">				            
 					            <a href="#" class="list-group-item">Iphone 7</a>
 					            <a href="#" class="list-group-item">Laptop</a>
@@ -189,17 +196,17 @@
 					</div>
 
 					<!-- Vừa đăng đấu giá -->
-					<div class="panel panel-default" style="border-color: #1ED271;">
-					    <div class="panel-heading" style="background-color: #1ED271;">
+					<div class="panel panel-default" style="border-color: #189eff;">
+					    <div class="panel-heading" style=" background: #189eff;">
 					    	Vừa đăng đấu giá
 					    </div>
 					    <div class="panel-body">
 							<div class="row">
 							    <div class="col-sm-6 col-md-4">
-							        <div class="thumbnail" style="border-color: #1ED271;">
+							        <div class="thumbnail" style="border-color: #189eff;">
 							            <a href="#"><img src="images/c.jpg" alt="..."></a>
-							            <div class="caption" style="background-color: #1ED271;">
-							                <h3 style="margin: 0 0">Vòng tay thần tượng</h3>
+							            <div class="caption" style=" background: #189eff;">
+							                <h4 style="margin: 0 0; font-weight: bold;">Vòng tay thần tượng</h4>
 							                <div>					                	
 												<span>Giá hiện tại: </span> 50000đ <br/>
 												<span>Lượt đầu giá: </span> 1 <br/>
@@ -209,10 +216,10 @@
 							        </div>
 							    </div>
 							    <div class="col-sm-6 col-md-4">
-							        <div class="thumbnail" style="border-color: #1ED271;">
+							        <div class="thumbnail" style="border-color: #189eff;">
 							            <a href="#"><img src="images/f.jpg" alt="..."></a>
-							            <div class="caption" style="background-color: #1ED271;">
-							                <h3 style="margin: 0 0">Vòng cổ</h3>
+							            <div class="caption" style="background-color: #189eff;">
+							                <h4 style="margin: 0 0; font-weight: bold;">Vòng cổ</h4>
 							                <div>					                	
 												<span>Giá hiện tại: </span> 60000đ <br/>
 												<span>Lượt đầu giá: </span> 1 <br/>
@@ -222,10 +229,10 @@
 							        </div>
 							    </div>
 							    <div class="col-sm-6 col-md-4">
-							        <div class="thumbnail" style="border-color: #1ED271;">
+							        <div class="thumbnail" style="border-color: #189eff;">
 							            <a href="#"><img src="images/s.png" alt="..."></a>
-							            <div class="caption" style="background-color: #1ED271;">
-							            	<h3 style="margin: 0 0">Vòng tay</h3>
+							            <div class="caption" style="background-color: #189eff;">
+							            	<h4 style="margin: 0 0; font-weight: bold;">Vòng tay</h4>
 											<div>					                	
 												<span>Giá hiện tại: </span> 10000đ <br/>
 												<span>Lượt đầu giá: </span> 0 <br/>
@@ -240,17 +247,17 @@
 					</div>	
 					
 					<!-- Sản phẩm hot -->
-					<div class="panel panel-default" style="border-color: #1ED271;">
-					    <div class="panel-heading" style="background-color: #1ED271;">
+					<div class="panel panel-default" style="border-color: #189eff;">
+					    <div class="panel-heading" style="background-color: #189eff;;">
 					    	Sản phẩm hot
 					    </div>
 					    <div class="panel-body">
 							<div class="row">
 							    <div class="col-sm-6 col-md-4">
-							        <div class="thumbnail" style="border-color: #1ED271;">
+							        <div class="thumbnail" style="border-color: #189eff;">
 							            <a href="#"><img src="images/e.jpg" alt="..."></a>
-							            <div class="caption" style="background-color: #1ED271;">
-							                <h3 style="margin: 0 0">Nhẫn kim cương</h3>
+							            <div class="caption" style="background-color: #189eff;;">
+							                <h4 style="margin: 0 0; font-weight: bold;">Nhẫn kim cương</h4>
 							                <div>					                	
 												<span>Giá hiện tại: </span> 700000đ <br/>
 												<span>Lượt đầu giá: </span> 14 <br/>
@@ -260,10 +267,10 @@
 							        </div>
 							    </div>
 							    <div class="col-sm-6 col-md-4">
-							        <div class="thumbnail" style="border-color: #1ED271;">
+							        <div class="thumbnail" style="border-color: #189eff;">
 							            <a href="#"><img src="images/j.jpg" alt="..."></a>
-							            <div class="caption" style="background-color: #1ED271;">
-							                <h3 style="margin: 0 0">Nhẫn hạt xanh</h3>
+							            <div class="caption" style="background-color: #189eff;">
+							                <h4 style="margin: 0 0; font-weight: bold;">Nhẫn hạt xanh</h4>
 							                <div>					                	
 												<span>Giá hiện tại: </span> 600000đ <br/>
 												<span>Lượt đầu giá: </span> 12 <br/>
@@ -273,10 +280,10 @@
 							        </div>
 							    </div>
 							    <div class="col-sm-6 col-md-4">
-							        <div class="thumbnail" style="border-color: #1ED271;">
+							        <div class="thumbnail" style="border-color: #189eff;">
 							            <a href="#"><img src="images/i.jpg" alt="..."></a>
-							            <div class="caption" style="background-color: #1ED271;">
-							                <h3 style="margin: 0 0">Dây chuyền trái tim</h3>
+							            <div class="caption" style="background-color: #189eff;">
+							                <h4 style="margin: 0 0; font-weight: bold;">Dây chuyền trái tim</h4>
 							                <div>					                	
 												<span>Giá hiện tại: </span> 500000đ <br/>
 												<span>Lượt đầu giá: </span> 11 <br/>
