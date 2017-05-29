@@ -8,8 +8,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link href="assets/css/bootstrap-social.css" rel="stylesheet" type="text/css" media="all" />
     <link href="assets/css/font-awesome.css" rel="stylesheet">
-    <link href="assets/css/docs.css" rel="stylesheet" >
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <link href="assets/css/docs.css" rel="stylesheet">
+
 </head>
 
 <body style="background: #f4f4f4">
@@ -28,105 +28,107 @@
                 <!-- Khung search -->
                 <!--<form class="form-inline" style="display:table-cell;text-align:center;vertical-align:middle;">-->
                 <div class="input-group col-md-11">
-                    <!-- Textbox search -->
-                    <input type="text" placeholder="Tìm kiếm" class="form-control" value="Iphone" />
-                    <!-- ------ -->
                     <!-- Dropdown -->
-                    <div class="input-group-btn">
+                    <div class="input-group-btn search-panel">
                         <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="background-color:#EDEEF2">
-                            <span id="search_concept">Tất cả</span> <span class="caret"></span>
+                            <span id="search-concept">Tất cả</span> <span class="caret"></span>
                         </button>
-                        <ul class="dropdown-menu">
-                            <li><a>Dụng cụ thể thao</a></li>
-                            <li><a>Điện gia dụng - điện lạnh</a></li>
-                            <li><a>Điện thoại - máy tính bảng</a></li>
-                            <li><a>Đồng hồ - phụ kiện</a></li>
-                            <li><a>Laptop - thiết bị IT</a></li>
-                            <li><a>Máy ảnh - quay phim</a></li>
-                            <li><a>Phụ kiện - thiết bị số</a></li>
-                            <li><a>Sách - báo - tạp chí</a></li>
-                            <li><a>Thời trang</a></li>
-                            <li><a>Tivi - thiết bị nghe nhìn</a></li>
-                            <li><a>Truyện tranh - đồ chơi</a></li>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#0">Tất cả</a></li>
+                            <li><a href="#1">Dụng cụ thể thao</a></li>
+                            <li><a href="#2">Điện gia dụng - điện lạnh</a></li>
+                            <li><a href="#3">Điện thoại - máy tính bảng</a></li>
+                            <li><a href="#4">Đồng hồ - phụ kiện</a></li>
+                            <li><a href="#5">Laptop - thiết bị IT</a></li>
+                            <li><a href="#6">Máy ảnh - quay phim</a></li>
+                            <li><a href="#7">Phụ kiện - thiết bị số</a></li>
+                            <li><a href="#8">Sách - báo - tạp chí</a></li>
+                            <li><a href="#9">Thời trang</a></li>
+                            <li><a href="#10">Tivi - thiết bị nghe nhìn</a></li>
+                            <li><a href="#11">Truyện tranh - đồ chơi</a></li>
                         </ul>
                     </div>
-                </div>
-                <!-- Nút search -->
-                <div>
-                    <button type="submit" class="btn btn-default" title="Tìm kiếm" style="border:none;color:#fff;background-color:transparent;">
-                        <span class="glyphicon glyphicon-search" style="vertical-align:middle;"></span>
+                    <!-- Textbox search -->
+                    <input type="text" placeholder="Tìm kiếm" class="form-control" />
+                    <input type="hidden" name="search-param" value="0" id="search-param">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="submit">
+                            <span class="glyphicon glyphicon-search"></span>
                     </button>
+                    </span>
                 </div>
                 <!--</form>-->
             </div>
             <!-- /Khung search -->
             <div class="col-md-2" style="display:flex;align-items:center;">
-                    <button class="btn btn-default col-md-2" data-toggle="modal" data-target="#signinModal"style="border:none;background-color:transparent;">
-                        <span class="glyphicon glyphicon-user" style="font-size:150%;color:#fff;"></span>
-                        <span style="color:#fff;">Đăng nhập</span>
-                    </button>
-                    <!-- Modal -->
-                    <div id="signinModal" class="modal fade" role="dialog">
-                      <div class="modal-dialog modal-sm">
-
+                <button class="btn btn-default col-md-2" data-toggle="modal" data-target="#signinModal" style="border:none;background-color:transparent;">
+                    <span class="glyphicon glyphicon-user" style="font-size:150%;color:#fff;"></span>
+                    <span style="color:#fff;">Đăng nhập</span>
+                </button>
+                <!-- Modal -->
+                <div id="signinModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-sm">
                         <!-- Modal content-->
                         <div class="modal-content">
-                          <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Đăng nhập</h4>
-                          </div>
-                          <div class="modal-body">
-                            <form >
-                                 <div class="input-group"> <!-- Email -->
-                                    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-                                    <input type="email" class="form-control" id="email" placeholder="Email" required autofocus>
-                                  </div><!-- Email -->
-
-                                  <div class="input-group"> <!-- Mật khẩu -->
-                                    <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-                                    <input type="password" class="form-control" id="mk" placeholder="Password" required>
-                                  </div><!-- Mật khẩu -->
-
-                                  <div class="col-md-offset-1 col-md-11" style="padding-right: 0;"> <!-- link -->
-                                    <div class="col-md-7" style="padding-right: 0; text-align: right;">                 
-                                            <a href="#">Quên mật khẩu?</a>                                              
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Đăng nhập</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="input-group">
+                                        <!-- Email -->
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                                        <input type="email" class="form-control" id="email" placeholder="Email" required autofocus>
                                     </div>
-                                    <div class="col-md-5" style="padding-right: 0; text-align: right;">                                     
-                                        <a href="signup.html">Đăng ký</a>
-                                    </div>                              
-                                  </div><!-- link -->
-                                   <!-- Checkbox duy trì đăng nhập -->
-                                  <div class="col-md-offset-4 col-md-8" style="padding-right: 0; text-align: right;">
-                                    <div class="checkbox">
-                                        <label><input type="checkbox">Duy trì đăng nhập</label>
+                                    <!-- Email -->
+                                    <div class="input-group">
+                                        <!-- Mật khẩu -->
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                                        <input type="password" class="form-control" id="mk" placeholder="Password" required>
                                     </div>
-                                  </div>
-
-                                  <div class="col-md-12" style="padding-left: 0; padding-right: 0;">
-                                     <button type="button" class="btn btn-labeled btn-success" style="width: 49%">
-                                        <span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span>Đăng nhập</button>
-                                    <button type="button" class="btn btn-labeled btn-danger" data-dismiss="modal" style="width: 49%">
-                                        <span class="btn-label"><i class="glyphicon glyphicon-remove"></i></span>Hủy</button>
-                                  </div>
-                                  <div class="col-md-12" style="padding: 0;">
-                                    <hr/>
-                                  </div>
-                                  
-                                  <a class="btn btn-block btn-social btn-facebook">
-                                    <span class="fa fa-facebook"></span> Đăng nhập với facebook
-                                  </a>
-                                  <a class="btn btn-block btn-social btn-google">
-                                    <span class="fa fa-google"></span> Đăng nhập với google
-                                  </a>
-                            </form>
-                          </div>
-                          <!-- <div class="modal-footer">
+                                    <!-- Mật khẩu -->
+                                    <div class="col-md-offset-1 col-md-11" style="padding-right: 0;">
+                                        <!-- link -->
+                                        <div class="col-md-7" style="padding-right: 0; text-align: right;">
+                                            <a href="#">Quên mật khẩu?</a>
+                                        </div>
+                                        <div class="col-md-5" style="padding-right: 0; text-align: right;">
+                                            <a href="signup.html">Đăng ký</a>
+                                        </div>
+                                    </div>
+                                    <!-- link -->
+                                    <!-- Checkbox duy trì đăng nhập -->
+                                    <div class="col-md-offset-4 col-md-8" style="padding-right: 0; text-align: right;">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox">Duy trì đăng nhập</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12" style="padding-left: 0; padding-right: 0;">
+                                        <button type="button" class="btn btn-labeled btn-success" style="width: 49%">
+                                            <span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span>Đăng nhập</button>
+                                        <button type="button" class="btn btn-labeled btn-danger" data-dismiss="modal" style="width: 49%">
+                                            <span class="btn-label"><i class="glyphicon glyphicon-remove"></i></span>Hủy</button>
+                                    </div>
+                                    <div class="col-md-12" style="padding: 0;">
+                                        <hr/>
+                                    </div>
+                                    <a class="btn btn-block btn-social btn-facebook">
+                                        <span class="fa fa-facebook"></span> Đăng nhập với facebook
+                                    </a>
+                                    <a class="btn btn-block btn-social btn-google">
+                                        <span class="fa fa-google"></span> Đăng nhập với google
+                                    </a>
+                                </form>
+                            </div>
+                            <!-- <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                           </div> -->
                         </div>
-
-                      </div>
-                    </div><!-- Modal -->
+                    </div>
+                </div>
+                <!-- Modal -->
             </div>
         </div>
         <!-- /Khung tiêu đề -->
@@ -364,6 +366,18 @@
     </div>
     <script type="text/javascript" src="assets/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script type="text/javascript">
+    $(document).ready(function(e) {
+        $('.search-panel .dropdown-menu').find('a').click(function(e) {
+            e.preventDefault();
+            var param = $(this).attr("href").replace("#", "");
+            var concept = $(this).text();
+            $('.search-panel span#search-concept').text(concept);
+            $('.input-group #search-param').val(param);
+        });
+    });
+    </script>
 </body>
 
 </html>
